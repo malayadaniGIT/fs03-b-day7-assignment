@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let num = 34;
+
+
+let sqrtVal = Math.sqrt(num);
+console.log("calculate sqaure:", sqrtVal);
+
+
+let randomVal = Math.round(Math.random() * 10)+1;
+console.log("RANDOM BETWEEN 0-9:", randomVal);
+
+let today = new Date();
+console.log("CURRENT DATE:", today);
+
+
+let year = today.getFullYear();
+let month = today.getMonth() + 1;
+let day = today.getDate();
+let dayOfWeek = today.getDay();
+console.log("Year:", year);
+console.log("Month:", month);
+console.log("Day of the month:", day);
+console.log("Day of the week:", dayOfWeek);
+
+
+today.setFullYear(2023);
+today.setMonth(5); 
+today.setDate(31);
+console.log("Updated date:", today);
+
+
+let updatedYear = today.getFullYear();
+let updatedMonth = today.getMonth() + 1;
+let updatedDay = today.getDate();
+let updatedDayOfWeek = today.getDay();
+console.log("Updated Year:", updatedYear);
+console.log("Updated Month:", updatedMonth);
+console.log("Updated Day of the month:", updatedDay);
+console.log("Updated Day of the week:", updatedDayOfWeek);
+
+let birthday = new Date("1998-01-17"); 
+let millisecondsDiff = today.getTime() - birthday.getTime();
+console.log("Milliseconds between birthday and today:", millisecondsDiff);
+
+let daysDiff = Math.floor(millisecondsDiff / (1000 * 60 * 60 * 24));
+console.log("Days between birthday and today:", daysDiff);
+
+    </script>
+</body>
+</html>
